@@ -30,7 +30,19 @@ The agent and the Wazuh server run on the same Debian virtual machine.
 | 3 | Failed sudo authentication | 5557 → 5503 → 5404 | chain of events after wrong sudo passwords |
 | 4 | Successful SSH login | 5715 | legitimate login, used as a baseline |
 
-Details for each scenario: [docs/scenarios](docs/scenarios)
+## Screenshots
+
+### 1. SSH brute-force (rule 5712)
+![SSH brute-force](screenshots/01-ssh-bruteforce.png)
+
+### 2. File Integrity Monitoring (rules 554 / 550 / 553)
+![FIM](screenshots/02-fim.png)
+
+### 3. Failed sudo authentication (rules 5557 → 5503 → 5404)
+![Failed sudo](screenshots/03-failed-sudo.png)
+
+### 4. Successful SSH login (rule 5715)
+![Successful SSH login](screenshots/04-ssh-success-login.png)
 
 ## Repository Structure
 
